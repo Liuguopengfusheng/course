@@ -19,7 +19,7 @@ int main(void)
 	PieVectTable.SCITXINTB = &Master_serial_Tx_isr;
 //	PieVectTable.XINT13    = &cpu_timer1_isr;
 	EDIS;
-	PieCtrlRegs.PIEIER1.bit.INTx7 = 1;//使能CPU定时器0的中断
+	PieCtrlRegs.PIEIER1.bit.INTx7 = 1;//脢鹿脛脺CPU露篓脢卤脝梅0碌脛脰脨露脧
 	InitEnableModbus_Master_Slaver();
 	IER |= M_INT8;
 	IER |= M_INT1;
@@ -29,7 +29,7 @@ int main(void)
 	ERTM;
 	while(1)
 	{
-		eMBModbus_Master_Slaver_poll();
+	//	eMBModbus_Master_Slaver_poll();
 	}
 }
 void Modbus_Data_Init(void)
