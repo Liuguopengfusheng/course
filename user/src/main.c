@@ -34,7 +34,7 @@ int main(void)
 }
 void Modbus_Data_Init(void)
 {
-	int cnt;
+	/*int cnt;
 	for(cnt = 0; cnt < REG_INPUT_NREGS;cnt++)
 	{
 		usRegInputBuf[cnt] = cnt;
@@ -50,5 +50,5 @@ void Modbus_Data_Init(void)
 	for(cnt = 0; cnt < REG_Discrete_NREG/8;cnt++)
 	{
 		DiscreteReg_Buf[cnt] = 0;
-	}
+	}*/
 }
