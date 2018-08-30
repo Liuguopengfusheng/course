@@ -29,7 +29,7 @@ int main(void)
 	ERTM;
 	while(1)
 	{
-	//	eMBModbus_Master_Slaver_poll();
+		eMBModbus_Master_Slaver_poll();
 	}
 }
 void Modbus_Data_Init(void)

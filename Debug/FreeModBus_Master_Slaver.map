@@ -1,10 +1,10 @@
 ******************************************************************************
              TMS320C2000 Linker PC v18.1.2                     
 ******************************************************************************
->> Linked Thu Aug 30 12:19:22 2018
+>> Linked Thu Aug 30 13:46:47 2018
 
 OUTPUT FILE NAME:   <FreeModBus_Master_Slaver.out>
-ENTRY POINT SYMBOL: "_c_int00"  address: 0000a629
+ENTRY POINT SYMBOL: "_c_int00"  address: 0000a62c
 
 
 MEMORY CONFIGURATION
@@ -15,7 +15,7 @@ PAGE 0:
   BEGIN                 00000000   00000002  00000002  00000000  RWIX
   RAMM0                 00000050   000003b0  00000000  000003b0  RWIX
   RAML0                 00008000   00001000  000000c0  00000f40  RWIX
-  RAML1                 00009000   00002000  00001a10  000005f0  RWIX
+  RAML1                 00009000   00002000  00001a13  000005ed  RWIX
   RAML2                 0000b000   00001000  00000000  00001000  RWIX
   RAML3                 0000c000   00001000  00000000  00001000  RWIX
   ZONE7A                00200000   0000fc00  00000000  0000fc00  RWIX
@@ -111,7 +111,7 @@ codestart
 ramfuncs   0    000080bc    00000004     
                   000080bc    00000004     DSP2833x_usDelay.obj (ramfuncs)
 
-.text      0    00009000    00001a10     
+.text      0    00009000    00001a13     
                   00009000    00000316     DSP2833x_DefaultIsr.obj (.text:retain)
                   00009316    000002de     port.obj (.text)
                   000095f4    0000021f     mbfuncholding_m.obj (.text)
@@ -126,33 +126,33 @@ ramfuncs   0    000080bc    00000004
                   0000a232    000000a9     portserial.obj (.text)
                   0000a2db    0000007e     portserial.obj (.text:retain)
                   0000a359    0000007e     portserial_m.obj (.text:retain)
-                  0000a3d7    0000007c     mbfuncdisc_m.obj (.text)
-                  0000a453    0000007a     main.obj (.text)
-                  0000a4cd    00000075     mbfuncinput_m.obj (.text)
-                  0000a542    00000074     mbutils.obj (.text)
-                  0000a5b6    00000073     DSP2833x_CpuTimers.obj (.text)
-                  0000a629    00000056     rts2800_fpu32.lib : boot28.asm.obj (.text)
-                  0000a67f    00000052     DSP2833x_Sci.obj (.text)
-                  0000a6d1    0000004f     mbfuncdisc.obj (.text)
-                  0000a720    0000004e     porttimer.obj (.text)
-                  0000a76e    0000004c     portserial_m.obj (.text)
-                  0000a7ba    0000004a     porttimer_m.obj (.text)
-                  0000a804    00000048     mbfuncother.obj (.text)
-                  0000a84c    00000045     mbfuncinput.obj (.text)
-                  0000a891    00000036     porttimer.obj (.text:retain)
-                  0000a8c7    00000029     rts2800_fpu32.lib : exit.c.obj (.text)
-                  0000a8f0    00000028     DSP2833x_PieCtrl.obj (.text)
-                  0000a918    00000026     mbcrc.obj (.text)
-                  0000a93e    00000024     portevent_m.obj (.text)
-                  0000a962    00000024     rts2800_fpu32.lib : cpy_tbl.c.obj (.text)
-                  0000a986    00000020     DSP2833x_PieVect.obj (.text)
-                  0000a9a6    0000001f     portevent.obj (.text)
-                  0000a9c5    0000001e     rts2800_fpu32.lib : memcpy.c.obj (.text)
-                  0000a9e3    00000019                       : args_main.c.obj (.text)
-                  0000a9fc    00000009                       : _lock.c.obj (.text)
-                  0000aa05    00000008     DSP2833x_CodeStartBranch.obj (.text)
-                  0000aa0d    00000002     rts2800_fpu32.lib : pre_init.c.obj (.text)
-                  0000aa0f    00000001                       : startup.c.obj (.text)
+                  0000a3d7    0000007d     main.obj (.text)
+                  0000a454    0000007c     mbfuncdisc_m.obj (.text)
+                  0000a4d0    00000075     mbfuncinput_m.obj (.text)
+                  0000a545    00000074     mbutils.obj (.text)
+                  0000a5b9    00000073     DSP2833x_CpuTimers.obj (.text)
+                  0000a62c    00000056     rts2800_fpu32.lib : boot28.asm.obj (.text)
+                  0000a682    00000052     DSP2833x_Sci.obj (.text)
+                  0000a6d4    0000004f     mbfuncdisc.obj (.text)
+                  0000a723    0000004e     porttimer.obj (.text)
+                  0000a771    0000004c     portserial_m.obj (.text)
+                  0000a7bd    0000004a     porttimer_m.obj (.text)
+                  0000a807    00000048     mbfuncother.obj (.text)
+                  0000a84f    00000045     mbfuncinput.obj (.text)
+                  0000a894    00000036     porttimer.obj (.text:retain)
+                  0000a8ca    00000029     rts2800_fpu32.lib : exit.c.obj (.text)
+                  0000a8f3    00000028     DSP2833x_PieCtrl.obj (.text)
+                  0000a91b    00000026     mbcrc.obj (.text)
+                  0000a941    00000024     portevent_m.obj (.text)
+                  0000a965    00000024     rts2800_fpu32.lib : cpy_tbl.c.obj (.text)
+                  0000a989    00000020     DSP2833x_PieVect.obj (.text)
+                  0000a9a9    0000001f     portevent.obj (.text)
+                  0000a9c8    0000001e     rts2800_fpu32.lib : memcpy.c.obj (.text)
+                  0000a9e6    00000019                       : args_main.c.obj (.text)
+                  0000a9ff    00000009                       : _lock.c.obj (.text)
+                  0000aa08    00000008     DSP2833x_CodeStartBranch.obj (.text)
+                  0000aa10    00000002     rts2800_fpu32.lib : pre_init.c.obj (.text)
+                  0000aa12    00000001                       : startup.c.obj (.text)
 
 .pinit     0    00008000    00000000     UNINITIALIZED
 
@@ -436,9 +436,9 @@ MODULE SUMMARY
        Total:                            1504   60                 1242              
                                                                                      
     .\user\src\
-       main.obj                          122    0                  1                 
+       main.obj                          125    0                  1                 
     +--+---------------------------------+------+------------------+--------------------+
-       Total:                            122    0                  1                 
+       Total:                            125    0                  1                 
                                                                                      
     .\user_lib\asm\
        DSP2833x_CodeStartBranch.obj      10     0                  0                 
@@ -472,7 +472,7 @@ MODULE SUMMARY
                                                                                      
        Stack:                            0      0                  768               
     +--+---------------------------------+------+------------------+--------------------+
-       Grand Total:                      6685   954                5909              
+       Grand Total:                      6688   954                5909              
 
 
 GLOBAL DATA SYMBOLS: SORTED BY DATA PAGE
@@ -633,7 +633,7 @@ GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name
 page  address   name                                          
 ----  -------   ----                                          
 0     00009000  .text                                         
-0     0000a8c7  C$$EXIT                                       
+0     0000a8ca  C$$EXIT                                       
 0     000090e6  _ADCINT_ISR                                   
 0     00380080  _ADC_cal                                      
 1     00000b00  _AdcMirror                                    
@@ -641,7 +641,7 @@ page  address   name
 1     0000c961  _Code                                         
 1     0000c008  _CoilsReg_Buf                                 
 1     0000c006  _CoilsReg_Start                               
-0     0000a5ef  _ConfigCpuTimer                               
+0     0000a5f2  _ConfigCpuTimer                               
 1     0000c972  _CpuTimer0                                    
 1     00000c00  _CpuTimer0Regs                                
 1     0000c962  _CpuTimer1                                    
@@ -713,7 +713,7 @@ page  address   name
 0     000091c2  _EQEP2_INT_ISR                                
 1     00006b00  _EQep1Regs                                    
 1     00006b40  _EQep2Regs                                    
-0     0000a90f  _EnableInterrupts                             
+0     0000a912  _EnableInterrupts                             
 0     0000931c  _EnterCriticalSection                         
 0     00009320  _ExitCriticalSection                          
 1     00000a80  _FlashRegs                                    
@@ -728,17 +728,17 @@ page  address   name
 0     0000900a  _INT14_ISR                                    
 0     00009324  _INTX_DISABLE                                 
 0     00009328  _INTX_ENABLE                                  
-0     0000a5b6  _InitCpuTimers                                
+0     0000a5b9  _InitCpuTimers                                
 0     0000932c  _InitEnableModbus_Master_Slaver               
 0     0000a0e0  _InitPeripheralClocks                         
-0     0000a8f0  _InitPieCtrl                                  
-0     0000a986  _InitPieVectTable                             
+0     0000a8f3  _InitPieCtrl                                  
+0     0000a989  _InitPieVectTable                             
 0     0000a08f  _InitPll                                      
-0     0000a67f  _InitSci                                      
-0     0000a680  _InitSciGpio                                  
-0     0000a687  _InitSciaGpio                                 
-0     0000a69d  _InitScibGpio                                 
-0     0000a6b7  _InitScicGpio                                 
+0     0000a682  _InitSci                                      
+0     0000a683  _InitSciGpio                                  
+0     0000a68a  _InitSciaGpio                                 
+0     0000a6a0  _InitScibGpio                                 
+0     0000a6ba  _InitScicGpio                                 
 0     0000a074  _InitSysCtrl                                  
 0     000092f8  _LUF_ISR                                      
 0     000092ee  _LVF_ISR                                      
@@ -754,7 +754,7 @@ page  address   name
 0     0000a399  _Master_serial_Tx_isr                         
 1     00005000  _McbspaRegs                                   
 1     00005040  _McbspbRegs                                   
-0     0000a48b  _Modbus_Data_Init                             
+0     0000a412  _Modbus_Data_Init                             
 0     00009032  _NMI_ISR                                      
 0     00009302  _PIE_RESERVED                                 
 1     00380090  _PartIdRegs                                   
@@ -813,31 +813,31 @@ abs   ffffffff  ___TI_prof_data_start
 abs   ffffffff  ___binit__                                    
 abs   ffffffff  ___c_args__                                   
 0     00008000  ___cinit__                                    
-0     0000aa10  ___etext__                                    
+0     0000aa13  ___etext__                                    
 abs   ffffffff  ___pinit__                                    
 0     00009000  ___text__                                     
-0     0000a9e3  __args_main                                   
+0     0000a9e6  __args_main                                   
 1     0000c994  __lock                                        
-0     0000aa04  __nop                                         
-0     0000aa00  __register_lock                               
-0     0000a9fc  __register_unlock                             
+0     0000aa07  __nop                                         
+0     0000aa03  __register_lock                               
+0     0000a9ff  __register_unlock                             
 1     00000400  __stack                                       
-0     0000aa0f  __system_post_cinit                           
-0     0000aa0d  __system_pre_init                             
+0     0000aa12  __system_post_cinit                           
+0     0000aa10  __system_pre_init                             
 1     0000c996  __unlock                                      
-0     0000a8c7  _abort                                        
-0     0000a629  _c_int00                                      
-0     0000a962  _copy_in                                      
-0     0000a891  _cpu_timer0_isr                               
+0     0000a8ca  _abort                                        
+0     0000a62c  _c_int00                                      
+0     0000a965  _copy_in                                      
+0     0000a894  _cpu_timer0_isr                               
 0     00009c0e  _eMBClose                                     
 0     00009c31  _eMBDisable                                   
 0     00009c1f  _eMBEnable                                    
 0     0000a16a  _eMBFuncReadCoils                             
-0     0000a6d1  _eMBFuncReadDiscreteInputs                    
+0     0000a6d4  _eMBFuncReadDiscreteInputs                    
 0     00009fc2  _eMBFuncReadHoldingRegister                   
-0     0000a84c  _eMBFuncReadInputRegister                     
+0     0000a84f  _eMBFuncReadInputRegister                     
 0     0000a007  _eMBFuncReadWriteMultipleHoldingRegister      
-0     0000a836  _eMBFuncReportSlaveID                         
+0     0000a839  _eMBFuncReportSlaveID                         
 0     0000a1ba  _eMBFuncWriteCoil                             
 0     00009f66  _eMBFuncWriteHoldingRegister                  
 0     0000a1ee  _eMBFuncWriteMultipleCoils                    
@@ -847,9 +847,9 @@ abs   ffffffff  ___pinit__
 0     00009d2e  _eMBMasterDisable                             
 0     00009d1c  _eMBMasterEnable                              
 0     000099f9  _eMBMasterFuncReadCoils                       
-0     0000a40c  _eMBMasterFuncReadDiscreteInputs              
+0     0000a489  _eMBMasterFuncReadDiscreteInputs              
 0     00009714  _eMBMasterFuncReadHoldingRegister             
-0     0000a502  _eMBMasterFuncReadInputRegister               
+0     0000a505  _eMBMasterFuncReadInputRegister               
 0     000097be  _eMBMasterFuncReadWriteMultipleHoldingRegister
 0     00009a81  _eMBMasterFuncWriteCoil                       
 0     00009629  _eMBMasterFuncWriteHoldingRegister            
@@ -868,9 +868,9 @@ abs   ffffffff  ___pinit__
 0     000094b7  _eMBMasterRegHoldingCB                        
 0     0000947c  _eMBMasterRegInputCB                          
 0     000099c4  _eMBMasterReqReadCoils                        
-0     0000a3d7  _eMBMasterReqReadDiscreteInputs               
+0     0000a454  _eMBMasterReqReadDiscreteInputs               
 0     000096df  _eMBMasterReqReadHoldingRegister              
-0     0000a4cd  _eMBMasterReqReadInputRegister                
+0     0000a4d0  _eMBMasterReqReadInputRegister                
 0     00009755  _eMBMasterReqReadWriteMultipleHoldingRegister 
 0     00009a41  _eMBMasterReqWriteCoil                        
 0     000095f4  _eMBMasterReqWriteHoldingRegister             
@@ -888,18 +888,18 @@ abs   ffffffff  ___pinit__
 0     000093ab  _eMBRegHoldingCB                              
 0     00009375  _eMBRegInputCB                                
 0     00009ba4  _eMBRegisterCB                                
-0     0000a804  _eMBSetSlaveID                                
+0     0000a807  _eMBSetSlaveID                                
 1     0000c846  _eMBState                                     
-0     0000a8c9  _exit                                         
+0     0000a8cc  _exit                                         
 1     0000c100  _m_usRegHoldingBuf                            
 1     0000c002  _m_usRegHoldingStart                          
 1     0000c240  _m_usRegInputBuf                              
 1     0000c001  _m_usRegInputStart                            
-0     0000a453  _main                                         
-0     0000a9c5  _memcpy                                       
-0     0000a59e  _prveMBError2Exception                        
-0     0000a7db  _prvvMasterTIMERExpiredISR                    
-0     0000a769  _prvvTIMERExpiredISR                          
+0     0000a3d7  _main                                         
+0     0000a9c8  _memcpy                                       
+0     0000a5a1  _prveMBError2Exception                        
+0     0000a7de  _prvvMasterTIMERExpiredISR                    
+0     0000a76c  _prvvTIMERExpiredISR                          
 1     0000c85c  _pxMBFrameCBByteReceived                      
 1     0000c84e  _pxMBFrameCBReceiveFSMCur                     
 1     0000c852  _pxMBFrameCBTransmitFSMCur                    
@@ -921,7 +921,7 @@ abs   ffffffff  ___pinit__
 1     0000c98a  _tx_temp                                      
 0     00009e0c  _ucMBMasterGetDestAddress                     
 1     0000c740  _ucRTUBuf                                     
-0     0000a918  _usMBCRC16                                    
+0     0000a91b  _usMBCRC16                                    
 0     000099b5  _usMBMasterGetPDUSndLength                    
 1     0000c00f  _usRegHoldingBuf                              
 1     0000c004  _usRegHoldingStart                            
@@ -929,48 +929,48 @@ abs   ffffffff  ___pinit__
 1     0000c007  _usRegInputStart                              
 0     000099a6  _vMBMasterGetPDUSndBuf                        
 0     0000999e  _vMBMasterGetRTUSndBuf                        
-0     0000a775  _vMBMasterPortSerialEnable                    
-0     0000a7e0  _vMBMasterPortTimersConvertDelayEnable        
-0     0000a7d0  _vMBMasterPortTimersDisable                   
-0     0000a7bf  _vMBMasterPortTimersEnable                    
-0     0000a7f2  _vMBMasterPortTimersRespondTimeoutEnable      
+0     0000a778  _vMBMasterPortSerialEnable                    
+0     0000a7e3  _vMBMasterPortTimersConvertDelayEnable        
+0     0000a7d3  _vMBMasterPortTimersDisable                   
+0     0000a7c2  _vMBMasterPortTimersEnable                    
+0     0000a7f5  _vMBMasterPortTimersRespondTimeoutEnable      
 0     00009e05  _vMBMasterSetCBRunInMasterMode                
 0     000099b9  _vMBMasterSetCurTimerMode                     
 0     00009e10  _vMBMasterSetDestAddress                      
 0     00009e1b  _vMBMasterSetErrorType                        
 0     000099ae  _vMBMasterSetPDUSndLength                     
 0     0000a232  _vMBPortSerialEnable                          
-0     0000a75e  _vMBPortTimersDisable                         
-0     0000a74d  _vMBPortTimersEnable                          
+0     0000a761  _vMBPortTimersDisable                         
+0     0000a750  _vMBPortTimersEnable                          
 0     00009e01  _xMBMasterGetCBRunInMasterMode                
-0     0000a94d  _xMBMasterPortEventGet                        
-0     0000a93e  _xMBMasterPortEventInit                       
-0     0000a943  _xMBMasterPortEventPost                       
-0     0000a7b1  _xMBMasterPortSerialGetByte                   
-0     0000a76e  _xMBMasterPortSerialInit                      
-0     0000a7a8  _xMBMasterPortSerialPutByte                   
-0     0000a7ba  _xMBMasterPortTimersInit                      
+0     0000a950  _xMBMasterPortEventGet                        
+0     0000a941  _xMBMasterPortEventInit                       
+0     0000a946  _xMBMasterPortEventPost                       
+0     0000a7b4  _xMBMasterPortSerialGetByte                   
+0     0000a771  _xMBMasterPortSerialInit                      
+0     0000a7ab  _xMBMasterPortSerialPutByte                   
+0     0000a7bd  _xMBMasterPortTimersInit                      
 0     000098ca  _xMBMasterRTUReceiveFSM                       
 0     0000994a  _xMBMasterRTUTimerExpired                     
 0     0000990e  _xMBMasterRTUTransmitFSM                      
 0     000099c0  _xMBMasterRequestIsBroadcast                  
-0     0000a95d  _xMBMasterRunResTake                          
-0     0000a9b5  _xMBPortEventGet                              
-0     0000a9a6  _xMBPortEventInit                             
-0     0000a9ab  _xMBPortEventPost                             
+0     0000a960  _xMBMasterRunResTake                          
+0     0000a9b8  _xMBPortEventGet                              
+0     0000a9a9  _xMBPortEventInit                             
+0     0000a9ae  _xMBPortEventPost                             
 0     0000a2d2  _xMBPortSerialGetByte                         
 0     0000a265  _xMBPortSerialInit                            
 0     0000a2c9  _xMBPortSerialPutByte                         
-0     0000a720  _xMBPortTimersInit                            
+0     0000a723  _xMBPortTimersInit                            
 0     00009ed5  _xMBRTUReceiveFSM                             
 0     00009f3f  _xMBRTUTimerT35Expired                        
 0     00009f12  _xMBRTUTransmitFSM                            
-0     0000a57b  _xMBUtilGetBits                               
-0     0000a542  _xMBUtilSetBits                               
+0     0000a57e  _xMBUtilGetBits                               
+0     0000a545  _xMBUtilSetBits                               
 abs   ffffffff  binit                                         
 0     00008000  cinit                                         
 0     00000000  code_start                                    
-0     0000aa10  etext                                         
+0     0000aa13  etext                                         
 abs   ffffffff  pinit                                         
 
 
@@ -1152,66 +1152,66 @@ page  address   name
 0     0000a31b  _serial_Tx_isr                                
 0     0000a359  _Master_serial_Rx_isr                         
 0     0000a399  _Master_serial_Tx_isr                         
-0     0000a3d7  _eMBMasterReqReadDiscreteInputs               
-0     0000a40c  _eMBMasterFuncReadDiscreteInputs              
-0     0000a453  _main                                         
-0     0000a48b  _Modbus_Data_Init                             
-0     0000a4cd  _eMBMasterReqReadInputRegister                
-0     0000a502  _eMBMasterFuncReadInputRegister               
-0     0000a542  _xMBUtilSetBits                               
-0     0000a57b  _xMBUtilGetBits                               
-0     0000a59e  _prveMBError2Exception                        
-0     0000a5b6  _InitCpuTimers                                
-0     0000a5ef  _ConfigCpuTimer                               
-0     0000a629  _c_int00                                      
-0     0000a67f  _InitSci                                      
-0     0000a680  _InitSciGpio                                  
-0     0000a687  _InitSciaGpio                                 
-0     0000a69d  _InitScibGpio                                 
-0     0000a6b7  _InitScicGpio                                 
-0     0000a6d1  _eMBFuncReadDiscreteInputs                    
-0     0000a720  _xMBPortTimersInit                            
-0     0000a74d  _vMBPortTimersEnable                          
-0     0000a75e  _vMBPortTimersDisable                         
-0     0000a769  _prvvTIMERExpiredISR                          
-0     0000a76e  _xMBMasterPortSerialInit                      
-0     0000a775  _vMBMasterPortSerialEnable                    
-0     0000a7a8  _xMBMasterPortSerialPutByte                   
-0     0000a7b1  _xMBMasterPortSerialGetByte                   
-0     0000a7ba  _xMBMasterPortTimersInit                      
-0     0000a7bf  _vMBMasterPortTimersEnable                    
-0     0000a7d0  _vMBMasterPortTimersDisable                   
-0     0000a7db  _prvvMasterTIMERExpiredISR                    
-0     0000a7e0  _vMBMasterPortTimersConvertDelayEnable        
-0     0000a7f2  _vMBMasterPortTimersRespondTimeoutEnable      
-0     0000a804  _eMBSetSlaveID                                
-0     0000a836  _eMBFuncReportSlaveID                         
-0     0000a84c  _eMBFuncReadInputRegister                     
-0     0000a891  _cpu_timer0_isr                               
-0     0000a8c7  C$$EXIT                                       
-0     0000a8c7  _abort                                        
-0     0000a8c9  _exit                                         
-0     0000a8f0  _InitPieCtrl                                  
-0     0000a90f  _EnableInterrupts                             
-0     0000a918  _usMBCRC16                                    
-0     0000a93e  _xMBMasterPortEventInit                       
-0     0000a943  _xMBMasterPortEventPost                       
-0     0000a94d  _xMBMasterPortEventGet                        
-0     0000a95d  _xMBMasterRunResTake                          
-0     0000a962  _copy_in                                      
-0     0000a986  _InitPieVectTable                             
-0     0000a9a6  _xMBPortEventInit                             
-0     0000a9ab  _xMBPortEventPost                             
-0     0000a9b5  _xMBPortEventGet                              
-0     0000a9c5  _memcpy                                       
-0     0000a9e3  __args_main                                   
-0     0000a9fc  __register_unlock                             
-0     0000aa00  __register_lock                               
-0     0000aa04  __nop                                         
-0     0000aa0d  __system_pre_init                             
-0     0000aa0f  __system_post_cinit                           
-0     0000aa10  ___etext__                                    
-0     0000aa10  etext                                         
+0     0000a3d7  _main                                         
+0     0000a412  _Modbus_Data_Init                             
+0     0000a454  _eMBMasterReqReadDiscreteInputs               
+0     0000a489  _eMBMasterFuncReadDiscreteInputs              
+0     0000a4d0  _eMBMasterReqReadInputRegister                
+0     0000a505  _eMBMasterFuncReadInputRegister               
+0     0000a545  _xMBUtilSetBits                               
+0     0000a57e  _xMBUtilGetBits                               
+0     0000a5a1  _prveMBError2Exception                        
+0     0000a5b9  _InitCpuTimers                                
+0     0000a5f2  _ConfigCpuTimer                               
+0     0000a62c  _c_int00                                      
+0     0000a682  _InitSci                                      
+0     0000a683  _InitSciGpio                                  
+0     0000a68a  _InitSciaGpio                                 
+0     0000a6a0  _InitScibGpio                                 
+0     0000a6ba  _InitScicGpio                                 
+0     0000a6d4  _eMBFuncReadDiscreteInputs                    
+0     0000a723  _xMBPortTimersInit                            
+0     0000a750  _vMBPortTimersEnable                          
+0     0000a761  _vMBPortTimersDisable                         
+0     0000a76c  _prvvTIMERExpiredISR                          
+0     0000a771  _xMBMasterPortSerialInit                      
+0     0000a778  _vMBMasterPortSerialEnable                    
+0     0000a7ab  _xMBMasterPortSerialPutByte                   
+0     0000a7b4  _xMBMasterPortSerialGetByte                   
+0     0000a7bd  _xMBMasterPortTimersInit                      
+0     0000a7c2  _vMBMasterPortTimersEnable                    
+0     0000a7d3  _vMBMasterPortTimersDisable                   
+0     0000a7de  _prvvMasterTIMERExpiredISR                    
+0     0000a7e3  _vMBMasterPortTimersConvertDelayEnable        
+0     0000a7f5  _vMBMasterPortTimersRespondTimeoutEnable      
+0     0000a807  _eMBSetSlaveID                                
+0     0000a839  _eMBFuncReportSlaveID                         
+0     0000a84f  _eMBFuncReadInputRegister                     
+0     0000a894  _cpu_timer0_isr                               
+0     0000a8ca  C$$EXIT                                       
+0     0000a8ca  _abort                                        
+0     0000a8cc  _exit                                         
+0     0000a8f3  _InitPieCtrl                                  
+0     0000a912  _EnableInterrupts                             
+0     0000a91b  _usMBCRC16                                    
+0     0000a941  _xMBMasterPortEventInit                       
+0     0000a946  _xMBMasterPortEventPost                       
+0     0000a950  _xMBMasterPortEventGet                        
+0     0000a960  _xMBMasterRunResTake                          
+0     0000a965  _copy_in                                      
+0     0000a989  _InitPieVectTable                             
+0     0000a9a9  _xMBPortEventInit                             
+0     0000a9ae  _xMBPortEventPost                             
+0     0000a9b8  _xMBPortEventGet                              
+0     0000a9c8  _memcpy                                       
+0     0000a9e6  __args_main                                   
+0     0000a9ff  __register_unlock                             
+0     0000aa03  __register_lock                               
+0     0000aa07  __nop                                         
+0     0000aa10  __system_pre_init                             
+0     0000aa12  __system_post_cinit                           
+0     0000aa13  ___etext__                                    
+0     0000aa13  etext                                         
 0     00380080  _ADC_cal                                      
 1     00000400  __stack                                       
 1     00000700  __STACK_END                                   
