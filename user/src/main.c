@@ -52,3 +52,4 @@ void Modbus_Data_Init(void)
 		DiscreteReg_Buf[cnt] = 0;
 	}
 }
+//this is the first_branch.
