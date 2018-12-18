@@ -1,4 +1,5 @@
 #include "main.h"
+#include "DSP2833x_Device.h"
 eMBErrorCode Code;
 void Modbus_Data_Init(void);
 int main(void)
