@@ -30,7 +30,7 @@ int main(void)
 	while(1)
 	{
 		eMBModbus_Master_Slaver_poll();
-		//鍦ㄤ簯绔笂淇敼
+		//在本地修改
 	}
 }
 void Modbus_Data_Init(void)
